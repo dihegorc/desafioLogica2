@@ -1,6 +1,6 @@
 const nomeHeroi = "MACROHEAD";
-let vitorias = 16;
-let derrotas = 5;
+let vitorias = 130;
+let derrotas = 15;
 let rankHeroi;
 
 function calcularRank(vitorias, derrotas) {
@@ -36,9 +36,11 @@ switch (true) {
 }
 
 if (rankHeroi === "Não Ranqueado") {
-  console.log(`O Herói ainda não jogou partidas ranqueadas suficientes.`);
+  console.log(
+    `O Herói ${nomeHeroi} ainda não jogou partidas ranqueadas suficientes.`
+  );
 } else {
   console.log(
-    `Herói tem de saldo de ${saldoDeVitorias} está no ranking ${rankHeroi}`
+    `Herói ${nomeHeroi} tem de saldo de ${saldoDeVitorias} vitórias e está no ranking ${rankHeroi}`
   );
 }
